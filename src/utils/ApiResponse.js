@@ -1,8 +1,11 @@
 class ApiResponse{
     constructor(statusCode, data,message="success"){
-      this.statusCode=this.statusCode
-      this.data=this.data
-      this.message=this.message
+      this.statusCode=statusCode
+      this.data=data
+      this.message=message
       this.success=statusCode<400
     }
 }
+// When you build APIs without something like ApiResponse, your routes may return responses in different structures:
+
+

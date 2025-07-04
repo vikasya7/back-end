@@ -6,12 +6,12 @@ class ApiError extends Error{
         statck=""
         
     ){
-        super(message)
+        super(message). // calls the constructor of the base error class
         this.statusCode=statusCode
         this.data=null
         this.message=message
         this.success=false;
-        this.errors=this.errors
+        this.errors=error
 
 
         if(statck){

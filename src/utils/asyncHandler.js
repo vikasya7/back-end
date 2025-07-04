@@ -1,10 +1,10 @@
 const asyncHandler=(requestHandler)=>{
-    (req,res,next)=>{
+    return (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))
     }
 }
 
-
+// highe order function so yu don,t need to manually write try catch in evry block of code
 
 export{asyncHandler}
 
