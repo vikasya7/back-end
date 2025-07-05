@@ -6,6 +6,8 @@ class ApiResponse{
       this.success=statusCode<400
     }
 }
+
+export {ApiResponse}
 // When you build APIs without something like ApiResponse, your routes may return responses in different structures:
 
 
