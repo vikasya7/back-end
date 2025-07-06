@@ -6,7 +6,7 @@ class ApiError extends Error{
         stack=""
         
     ){
-        super(message). // calls the constructor of the base error class
+        super(message)  // calls the constructor of the base error class && message overwrite
         this.statusCode=statusCode
         this.data=null
         this.message=message
